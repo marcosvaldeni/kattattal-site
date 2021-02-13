@@ -13,7 +13,7 @@ import {
   NavBtnLink
 } from './styles';
 
-const Navbar = () => {
+const Navbar = ({ toggleHandler }) => {
   return (
     <>
       <Nav>
@@ -21,8 +21,7 @@ const Navbar = () => {
 
           <NavLogo to="/">Kattattal</NavLogo>
 
-
-          <MobileIcon>
+          <MobileIcon onClick={toggleHandler} >
             <FaBars />
           </MobileIcon>
           <NavMenu>
