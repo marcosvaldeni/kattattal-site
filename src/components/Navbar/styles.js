@@ -3,13 +3,16 @@ import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
+  background: ${({scrollNav}) => (scrollNav ? '#333' : 'transparent')};
   height: 80px;
   width: 100%;
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: absolute;
+  position: sticky;
+  top: 0;
   z-index: 10;
 
   @media screen and (max-width: 960) {
@@ -90,7 +93,7 @@ export const NavBtn =  styled.nav`
   }
 `;
 
-export const NavBtnLink = styled(LinkRouter)`
+export const NavBtnLink = styled.a`
   border-radius: 50px;
   background: #01bf71;
   white-space: nowrap;
@@ -102,6 +105,13 @@ export const NavBtnLink = styled(LinkRouter)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 5px;
+  }
 
   &:hover {
     transition: all 0.2s ease-in-out;

@@ -27,7 +27,8 @@ const Info = ({
   buttonLabel,
   img,
   alt,
-  topLine
+  topLine,
+  primary
 }) => {
   return (
     <>
@@ -37,18 +38,22 @@ const Info = ({
             <Column1>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
-                  <Heading lightText={lightText}>
-                    {headline}
-                  </Heading>
-                  <Subtitle darkText={darkText}>
-                    {description}
-                  </Subtitle>
+                <Heading lightText={lightText}>
+                  {headline}
+                </Heading>
+                <Subtitle darkText={darkText}>
+                  {description}
+                </Subtitle>
                 <BtnWrap>
-                <Button 
-                  to="signup" 
-                  color={'#9147FF'}
-                  dark={false}
-                > {buttonLabel}</Button>
+                  <Button 
+                    to="#" 
+                    color={'#01bf71'}
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                  > {buttonLabel}</Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>

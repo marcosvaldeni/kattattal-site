@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 import {
   SidebarContainer, 
@@ -20,13 +21,29 @@ const Sidebar = ({ isOpen, toggleHandler }) => {
 
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink onClick={toggleHandler} to='about'>About</SidebarLink>
-          <SidebarLink onClick={toggleHandler} to='about'>What I Play</SidebarLink>
-          <SidebarLink onClick={toggleHandler} to='about'>Channels</SidebarLink>
-          <SidebarLink onClick={toggleHandler} to='about'>Podcast</SidebarLink>
+          <SidebarLink
+            smooth={true} duration={500} spy={true} exact='true' offset={+50}
+            onClick={toggleHandler} to='about'>About</SidebarLink>
+          <SidebarLink 
+            smooth={true} duration={500} spy={true} exact='true' offset={+50}
+            onClick={toggleHandler} to='podcast'>Podcast</SidebarLink>
+          <SidebarLink 
+            smooth={true} duration={500} spy={true} exact='true' offset={+50}
+            onClick={toggleHandler} to='channels'>Channels</SidebarLink>
+          <SidebarLink 
+            smooth={true} duration={500} spy={true} exact='true' offset={+50}
+            onClick={toggleHandler} to='play'>What I Play</SidebarLink>
         </SidebarMenu>
         <SidebarBtnWrap>
-          <SidebarRoute onClick={toggleHandler} to='/signin'>Sign In</SidebarRoute>
+          <SidebarRoute
+            onClick={toggleHandler} 
+            to='/signin'
+            href="https://chat.whatsapp.com/I3D3dxVa91nAoo3UMTNikh"
+            target="_blank"
+          >
+            <FaWhatsapp size={30} />
+            Contact Me
+          </SidebarRoute>
         </SidebarBtnWrap>
       </SidebarWrapper>
 

@@ -9,8 +9,8 @@ const App = () => {
     <>
       <BrowserRouter>
         <Home />
-        </BrowserRouter>
-      <GlobalStyle />
+        <GlobalStyle />
+      </BrowserRouter>
     </>
   );
 }
