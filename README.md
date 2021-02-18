@@ -26,11 +26,11 @@
 
 **You need to install at least [NodeJS 12.18.2](https://nodejs.org/) and [Yarn](https://classic.yarnpkg.com/en/docs/install/), then in order to clone the project via HTTPS, run this command:**
 
-```git clone https://github.com/marcosvaldeni/challenge-css-quiz.git```
+```git clone https://github.com/marcosvaldeni/kattattal-site.git```
 
 SSH URLs provide access to a Git repository via SSH, a secure protocol. If you have a SSH key registered in your Github account, clone the project using this command:
 
-```git clone github.com/marcosvaldeni/challenge-css-quiz.git```
+```git clone github.com/marcosvaldeni/kattattal-site.git```
 
 **Install Dependencies**
 
